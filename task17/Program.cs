@@ -33,10 +33,10 @@ int getCoordinateFromUser(string userInformation) /* метод обрабаты
         Console.Write(userInformation); // Пишем пользователю сообщение (в данном случае "Х: " и "Y: ")
         string userLine = Console.ReadLine();// В переменную кладем данные, которые ввел пользователь
         int.TryParse(userLine, out result);/* int.TryParse метод который на вход получает строковые данные (string), а на выход пытается выдать
-        данные типа int (в переменной result), если оно не может это сделать то в переменную записывается 0*/
+        данные типа int (в переменной result), если она не может это сделать то в переменную записывается 0*/
         if (result == 0 && userLine != "0")//если result все еще равен 0 и userLine не равен 0
         {
-            Console.WriteLine($"Введите целое число вы ввели {userLine}");// то выводим пользователю сообщение
+            Console.WriteLine($"Введите целое число, вы ввели {userLine}");// то выводим пользователю сообщение
         }
         else
         {
