@@ -18,6 +18,10 @@ int getNumberFromUser(string userInformation)
         {
             Console.WriteLine($"Ошибка ввода! Введите пятизначное число, вы ввели: [{userLine}].");
         }
+        else // Чтобы можно было вводить значение равное 0
+        {
+            break;
+        }
     }
     return result;
 }

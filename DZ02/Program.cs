@@ -24,6 +24,10 @@ double getCoordinateFromUser(string userInformation)
         {
             Console.WriteLine($"Ошибка ввода! Ожидается числовое значение, вы ввели: [{userLine}].");
         }
+        else // Чтобы можно было вводить значение равное 0
+        {
+            break;
+        }
     }
     return result;
 }
